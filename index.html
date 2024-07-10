@@ -48,15 +48,17 @@
                     <div>
                         <img src="https://img.freepik.com/vetores-gratis/ilustracao-de-bandeira-eua_53876-18165.jpg" alt="">
                     </div>
+
         
-                    <select name="moeda1" id="moeda1">
-                        <option value="1">USD - Dolar Americado</option>
-                        <option value="1">EUA - Euro</option>
-                        <option value="1">BRL - Real</option>
-                    </select>
+                    <input type="text" id="moeda1" list="listaMoeda1" placeholder="Selecione a moeda...">
+                    <datalist id="listaMoeda1">
+                    </datalist>
                     |
-                    <input type="text" name="valor" id="valor" placeholder="0,00" autocomplete="off" step="0,1">
+                    <input type="text" name="valor" id="inputMoeda1" placeholder="0,00" autocomplete="off" value="1">
                 </span>
+                <div class="msgErro" id="msgErro">
+                    
+                </div>
 
                 <span class="material-symbols-outlined iconeConversor">currency_exchange</span>
 
@@ -65,16 +67,14 @@
                         <img src="https://img.freepik.com/vetores-gratis/ilustracao-de-bandeira-eua_53876-18165.jpg" alt="">
                     </div>
         
-                    <select name="moeda1" id="moeda1">
-                        <option value="1">USD - Dolar Americado</option>
-                        <option value="1">EUA - Euro</option>
-                        <option value="1">BRL - Real</option>
-                    </select>
+                    <input type="text" id="moeda2" list="listaMoeda2" placeholder="Selecione a Moeda">
+                    <datalist name="moeda2" id="listaMoeda2">
+                    </datalist>
                     |
-                    <input type="text" name="valor" id="valor" placeholder="0,00" readonly>
+                    <input type="text" name="valor" id="inputMoeda2" placeholder="0,00" readonly>
                 </span>
 
-                <button class="btnComprarMoeda">Comprar Moeda Agora!!!</button>
+                <button class="btnComprarMoeda"  id="btnConverter" type="button" >Converter</button>
 
             </form>
 

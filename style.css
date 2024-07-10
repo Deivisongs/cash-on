@@ -121,6 +121,8 @@ main{
     border-radius: 50%;
 }
 .conversor .inputConvert select{
+    background: transparent;
+    color: black;
     text-align: center;
     border: none;
 }
@@ -128,6 +130,19 @@ main{
     width: 40%;
     padding-left: 10px;
     border: none;
+}
+.conversor .inputConvert #inputMoeda2{
+    color: rgb(129, 129, 129);
+}
+.msgErro{
+    width: 90%;
+    padding: 0px 0px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 13px;
+    background: rgba(255, 0, 0, 0.185);
+    color: red;
+    transition: 300ms;
 }
 .conversor form .btnComprarMoeda{
     margin-top: 20px;
