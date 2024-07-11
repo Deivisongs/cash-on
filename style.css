@@ -138,11 +138,11 @@ main{
     font-size: 16px;
 }
 #inputMoeda1{
-    width: 30%;
+    width: 35%;
 }
 .conversor .inputConvert #inputMoeda2{
     color: rgb(129, 129, 129);
-    width: 30%;
+    width: 35%;
 }
 .msgErro{
     width: 90%;
