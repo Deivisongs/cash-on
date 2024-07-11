@@ -43,7 +43,7 @@ async function selectMoedas(){
 
             if(moedas[x] != ''){
                 const option = document.createElement('option')
-                option.value = x
+                option.value = x + ' ' + moedas[x]
                 option.textContent = `${x} - ${moedas[x]}`
     
                 select.append(option)
