@@ -60,11 +60,28 @@ selectMoedas()
 
 
 
+/* funcão seleção moedas apartir da Nav */
+
+function clickMoedas(moeda){
+    document.getElementById('moeda1').value = moeda.id
+    console.log(moeda.id)
+}
+
+
+
+/* -------------------------------------------*/
+
+
+
+
 
 /* Função para converter os valores */
 
 const btnConverter = document.getElementById('btnConverter')
-btnConverter.addEventListener('click', () => converte('moeda1', 'moeda2'))
+btnConverter.addEventListener('click', () => {
+    converte('moeda1', 'moeda2')
+})
+
 
 
 function converte(x, y){
@@ -77,8 +94,13 @@ function converte(x, y){
     let retornoBusca = []
 
     async function buscaDados(){
+        const data = new Date();
+        const dia = data.getDate();
+        const mes = data.getMonth() + 1;
+        const ano = data.getFullYear();
+    
         try{
-            const api = await fetch(`https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@2024.7.9/v1/currencies/${moeda1}.json`)
+            const api = await fetch(`https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@${ano}.${mes}.${dia}/v1/currencies/${moeda1}.json`)
 
             const dados = await api.json()
 
@@ -95,7 +117,9 @@ function converte(x, y){
             
             let resposta = inputMoeda1*retornoBusca[moeda1][moeda2]
 
-            document.getElementById('inputMoeda2').value = resposta
+            const retorno = resposta.toFixed(2);
+
+            document.getElementById('inputMoeda2').value = retorno
             
         }else{
             msgErro.textContent = 'Ops, Digite um valor válido!!!'
