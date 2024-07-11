@@ -132,12 +132,17 @@ main{
     border: none;
 }
 .conversor .inputConvert input{
-    width: 40%;
+    width: 70%;
     padding-left: 10px;
     border: none;
+    font-size: 16px;
+}
+#inputMoeda1{
+    width: 20%;
 }
 .conversor .inputConvert #inputMoeda2{
     color: rgb(129, 129, 129);
+    width: 20%;
 }
 .msgErro{
     width: 90%;
