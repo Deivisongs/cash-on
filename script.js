@@ -5,9 +5,21 @@ function ativaDarkMode(){
     if(spanDarkMode.textContent === 'dark_mode'){
         spanDarkMode.textContent = 'light_mode'
         spanDarkMode.style.color = 'white'
+        document.getElementById('header').style.background = '#0d0c0f';
+        document.getElementById('body').style.background = '#18161d';
+        document.getElementById('spanLogo').style.color = '#ffffff'
+        document.getElementById('nav').style.color = '#ffffff'
+        document.getElementById('conversor').style.boxShadow = 'none'
+        document.getElementById('tituloCotacoes').style.color = 'white'
     }else{
         spanDarkMode.textContent = 'dark_mode'
         spanDarkMode.style.color = 'black'
+        document.getElementById('header').style.background = '#ffffff';
+        document.getElementById('body').style.background = '#ececec';
+        document.getElementById('spanLogo').style.color = 'black'
+        document.getElementById('nav').style.color = 'black'
+        document.getElementById('conversor').style.boxShadow = '2px 2px 10px rgb(192, 192, 192)'
+        document.getElementById('tituloCotacoes').style.color = 'black'
     }
 }
 
@@ -43,7 +55,7 @@ async function selectMoedas(){
 
             if(moedas[x] != ''){
                 const option = document.createElement('option')
-                option.value = x + ' ' + moedas[x]
+                option.value = x
                 option.textContent = `${x} - ${moedas[x]}`
     
                 select.append(option)
