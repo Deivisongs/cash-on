@@ -62,6 +62,7 @@ select:focus, input:focus, textarea:focus{
     display: flex;
     background: none;
     border: none;
+    color: black;
 }
 
 main{
