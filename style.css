@@ -126,17 +126,12 @@ main{
     height: 90%;
     border-radius: 50%;
 }
-.conversor .inputConvert select{
-    background: transparent;
-    color: black;
-    text-align: center;
-    border: none;
-}
 .conversor .inputConvert input{
     width: 70%;
     padding-left: 10px;
     border: none;
     font-size: 16px;
+    background: transparent;
 }
 #inputMoeda1{
     width: 35%;

@@ -5,12 +5,15 @@ function ativaDarkMode(){
     if(spanDarkMode.textContent === 'dark_mode'){
         spanDarkMode.textContent = 'light_mode'
         spanDarkMode.style.color = 'white'
-        document.getElementById('header').style.background = '#0d0c0f';
-        document.getElementById('body').style.background = '#18161d';
+        document.getElementById('header').style.background = '#161616';
+        document.getElementById('body').style.background = '#202020';
         document.getElementById('spanLogo').style.color = '#ffffff'
         document.getElementById('nav').style.color = '#ffffff'
         document.getElementById('conversor').style.boxShadow = 'none'
+        document.getElementById('conversor').style.background = 'white'
+        document.getElementById('conversor').style.color = 'black'
         document.getElementById('tituloCotacoes').style.color = 'white'
+
     }else{
         spanDarkMode.textContent = 'dark_mode'
         spanDarkMode.style.color = 'black'
@@ -20,6 +23,8 @@ function ativaDarkMode(){
         document.getElementById('nav').style.color = 'black'
         document.getElementById('conversor').style.boxShadow = '2px 2px 10px rgb(192, 192, 192)'
         document.getElementById('tituloCotacoes').style.color = 'black'
+        document.getElementById('conversor').style.background = 'white'
+        
     }
 }
 
